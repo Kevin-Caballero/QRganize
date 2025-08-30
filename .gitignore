@@ -20,7 +20,7 @@ coverage
 # Auto-generated data ignored
 services/
 services/backend/
-services/frontend/
+services/app/
 diffs/
 localDocuments/
 # development/data/

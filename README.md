@@ -1,99 +1,89 @@
-# QRganize - Aplicación de Organización de Mudanzas
+# QRganize - Moving Organization Application
 
-## 🎯 Descripción
+<div align="center">
+  <img src="services/app/src/assets/qrganize_icon.png" alt="QRganize Logo" width="150"/>
+</div>
 
-QRganize es una aplicación móvil completa que ayuda a organizar mudanzas mediante el uso de códigos QR para identificar el contenido de las cajas.
+## Description
 
-## ✅ Funcionalidades Completadas
+QRganize is a comprehensive mobile application that helps organize moving processes by using QR codes to identify the contents of boxes.
+
+## Screenshots
+
+<div align="center">
+  <img src="assets/1.png" width="280" height="600" alt="Item organization screen"/>
+  <img src="assets/2.png" width="280" height="600" alt="QR code scanning"/>
+  <img src="assets/3.png" width="280" height="600" alt="Box contents view"/>
+</div>
+
+## Completed Features
 
 ### Backend (NestJS)
 
-- ✅ Autenticación y gestión de usuarios
-- ✅ CRUD completo de cajas con validación
-- ✅ CRUD completo de items dentro de cajas
-- ✅ Generación automática de códigos QR únicos
-- ✅ API REST documentada
-- ✅ Manejo de archivos e imágenes
-- ✅ Base de datos MySQL con TypeORM
+- Authentication and user management
+- Complete CRUD for boxes with validation
+- Complete CRUD for items inside boxes
+- Automatic generation of unique QR codes
+- Documented REST API
+- File and image handling
+- MySQL database with TypeORM
 
 ### Frontend (Ionic Angular)
 
-- ✅ Interfaz móvil responsive
-- ✅ Gestión completa de cajas
-- ✅ Gestión completa de items
-- ✅ Scanner de códigos QR funcional
-- ✅ Búsqueda avanzada de cajas
-- ✅ Integración con cámara para fotos
-- ✅ Navegación con tabs
-- ✅ Modales para crear/editar
-- ✅ Notificaciones toast
+- Responsive mobile interface
+- Complete box management
+- Complete item management
+- Functional QR code scanner
+- Advanced box search
+- Camera integration for photos
+- Tab navigation
+- Modals for create/edit
+- Toast notifications
 
-## 🚀 Próximas Mejoras
+## Upcoming Improvements
 
-### Funcionalidades Adicionales
+### Additional Features
 
-1. **Categorías de Items**: Clasificar objetos por tipo (ropa, libros, etc.)
-2. **Estados de Mudanza**: Marcar cajas como empacadas, en tránsito, desempacadas
-3. **Ubicaciones**: Asignar habitaciones de origen y destino
-4. **Checklist de Mudanza**: Lista de tareas pendientes
-5. **Compartir Cajas**: Colaboración entre usuarios
-6. **Exportar/Importar**: Backup de datos
-7. **Estadísticas**: Dashboard con métricas de la mudanza
-8. **Notificaciones Push**: Recordatorios y alertas
-
-### Mejoras Técnicas
-
-1. **PWA**: Funcionalidad offline
-2. **Sync**: Sincronización de datos offline/online
-3. **Performance**: Lazy loading de imágenes
-4. **Tests**: Pruebas unitarias e integración
-5. **CI/CD**: Pipeline de despliegue automatizado
-6. **Docker**: Containerización
-7. **Monitoring**: Logs y métricas
-8. **Security**: Auditoría de seguridad
+1. **Item Categories**: Classify objects by type (clothing, books, etc.)
+2. **Moving States**: Mark boxes as packed, in transit, unpacked
+3. **Locations**: Assign origin and destination rooms
+4. **Moving Checklist**: Pending tasks list
+5. **Share Boxes**: Collaboration between users
+6. **Export/Import**: Data backup
+7. **Statistics**: Dashboard with moving metrics
+8. **Push Notifications**: Reminders and alerts
 
 ### UX/UI
 
-1. **Tema oscuro**: Modo dark/light
-2. **Accesibilidad**: WCAG compliance
-3. **Animaciones**: Transiciones suaves
-4. **Gestos**: Swipe actions
-5. **Filtros avanzados**: Múltiples criterios de búsqueda
-6. **Tutorial**: Onboarding interactivo
+1. **Dark Theme**: Dark mode
+2. **Advanced Filters**: Multiple search criteria
+3. **Tutorial**: Interactive onboarding
 
-## 🛠️ Instalación y Uso
+## Installation and Usage
 
-### Requisitos Previos
+### Prerequisites
 
 - Node.js 18+
 - MySQL 8+
-- Android Studio / Xcode (para mobile)
+- Docker
+- Angular CLI
+- Ionic CLI
+- Git
 
-### Backend
-
-```bash
-cd back
-npm install
-npm run start:dev
-```
-
-### Frontend
+### Getting Started
 
 ```bash
-cd app
-npm install
-npm start
+# Clone services repositories
+npm run pull
+
+# Install dependencies and build
+npm run prepare
+
+# Start backend service and db
+npm run start
 ```
 
-### Mobile
-
-```bash
-cd app
-ionic capacitor add android
-ionic capacitor run android
-```
-
-## 📚 Tecnologías Utilizadas
+## Technologies Used
 
 ### Backend
 
@@ -112,18 +102,14 @@ ionic capacitor run android
 - RxJS
 - TypeScript
 
-## 📱 Capturas de Pantalla
+## Contributing
 
-[Agregar capturas de pantalla aquí]
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 🤝 Contribuir
+## License
 
-[Instrucciones para contribuir al proyecto]
-
-## 📄 Licencia
-
-[Especificar licencia]
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
-_Desarrollado para facilitar mudanzas organizadas y sin estrés_
+_Developed to facilitate organized and stress-free moving_
