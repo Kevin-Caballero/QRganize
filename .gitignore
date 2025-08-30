@@ -1,0 +1,27 @@
+.idea
+*.iml
+node_modules
+dist**
+!.gitkeep
+.env
+logs
+pids
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+coverage
+**/*.iml
+
+# Auto-generated data ignored
+services/
+services/backend/
+services/frontend/
+diffs/
+localDocuments/
+# development/data/
+releases/

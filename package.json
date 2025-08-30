@@ -1,0 +1,45 @@
+{
+  "name": "qrganize",
+  "version": "0.1.0",
+  "description": "Contain all services used in QRganize",
+  "main": "index.js",
+  "scripts": {
+    "pull": "node scripts/pull.js",
+    "prepare": "node scripts/prepare.js",
+    "build": "node scripts/build.js",
+    "start": "node scripts/start.js",
+    "start:dev": "node scripts/start.js --dev",
+    "docker:start": "node scripts/docker-start.js",
+    "docker:start:dev": "node scripts/docker-start.js --dev",
+    "docker:status": "node scripts/docker-control.js status",
+    "docker:logs": "node scripts/docker-control.js logs",
+    "docker:stop": "node scripts/docker-control.js stop",
+    "docker:restart": "node scripts/docker-control.js restart",
+    "docker:down": "node scripts/docker-control.js down",
+    "docker:clean": "node scripts/docker-control.js clean",
+    "generate:apk": "node scripts/generate-apk.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kevin-Caballero/QRganize.git"
+  },
+  "author": "Kevin Caballero",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://github.com/Kevin-Caballero/QRganize.git#readme",
+  "devDependencies": {
+    "cross-spawn": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "node-fetch": "^2.6.9",
+    "prompts": "^2.4.2",
+    "which": "^2.0.2",
+    "winston": "^3.8.0",
+    "yaml": "^2.1.1"
+  },
+  "services": {
+    "app": "https://github.com/Kevin-Caballero/app.git#main",
+    "backend": "https://github.com/Kevin-Caballero/backend.git#main"
+  },
+  "dependencies": {
+    "@nestjs/platform-express": "^11.1.6"
+  }
+}
