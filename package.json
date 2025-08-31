@@ -17,7 +17,10 @@
     "docker:restart": "node scripts/docker-control.js restart",
     "docker:down": "node scripts/docker-control.js down",
     "docker:clean": "node scripts/docker-control.js clean",
-    "generate:apk": "node scripts/generate-apk.js"
+    "generate:apk": "node scripts/generate-apk.js",
+    "db:up": "node scripts/db-start.js",
+    "db:stop": "node scripts/db-stop.js",
+    "db:down": "node scripts/db-down.js"
   },
   "repository": {
     "type": "git",
