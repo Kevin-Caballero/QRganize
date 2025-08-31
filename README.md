@@ -1,12 +1,16 @@
 # QRganize - Moving Organization Application
 
 <div align="center">
-  <img src="services/app/src/assets/qrganize_icon.png" alt="QRganize Logo" width="150"/>
+  <img src="assets/qrganize_icon.png" alt="QRganize Logo" width="150"/>
 </div>
 
 ## Description
 
 QRganize is a comprehensive mobile application that helps organize moving processes by using QR codes to identify the contents of boxes.
+
+## Subrepos
+- [QRganize App](https://github.com/Kevin-Caballero/QRganize-app)
+- [QRganize Backend](https://github.com/Kevin-Caballero/QRganize-backend)
 
 ## Screenshots
 
