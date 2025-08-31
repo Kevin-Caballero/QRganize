@@ -54,14 +54,28 @@ async function prepareServices() {
 
     // Build the service
     console.log(`⏳ Building ${serviceName}...`);
-    const buildResult = spawn.sync("npm", ["run", "build"], {
+
+    let buildCommand = ["run", "build"];
+
+    // For the app service, use development configuration
+    if (serviceName === "app") {
+      buildCommand = ["run", "build", "--", "--configuration=development"];
+    }
+
+    const buildResult = spawn.sync("npm", buildCommand, {
       cwd: serviceDir,
       stdio: "inherit",
     });
 
     if (buildResult.status !== 0) {
-      console.error(`❌ Failed to build ${serviceName}`);
-      process.exit(1);
+      console.error(
+        `❌ Failed to build ${serviceName}, continuing with other services...`
+      );
+      console.log(
+        `   You can build it manually later by running 'cd services/${serviceName} && npm run build'`
+      );
+    } else {
+      console.log(`✅ Service ${serviceName} is built successfully`);
     }
 
     console.log(`✅ Service ${serviceName} is prepared`);

@@ -39,8 +39,8 @@
     "yaml": "^2.1.1"
   },
   "services": {
-    "app": "https://github.com/Kevin-Caballero/app.git#main",
-    "backend": "https://github.com/Kevin-Caballero/backend.git#main"
+    "app": "https://github.com/Kevin-Caballero/QRganize-app.git#main",
+    "backend": "https://github.com/Kevin-Caballero/QRganize-backend.git#main"
   },
   "dependencies": {
     "@nestjs/platform-express": "^11.1.6"
