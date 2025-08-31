@@ -1,7 +1,7 @@
 # QRganize - Moving Organization Application
 
 <div align="center">
-  <img src="services/app/src/assets/qrganize_icon.png" alt="QRganize Logo" width="150"/>
+  <img src="assets/qrganize_icon.png" alt="QRganize Logo" width="150"/>
 </div>
 
 ## Description
